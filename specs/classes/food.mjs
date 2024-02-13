@@ -4,29 +4,16 @@ import {
 } from '../../registry.mjs';
 export class FoodCtorArgs extends CtorArgs {
     /**
-     * @returns { String }
-    */
-    get name() {
-        return this.get({ name: null });
-    }
-    /**
      * @param { String } value
     */
     set name(value) {
-        this.set({ name: value });
-    }
-
-    /**
-     * @returns { Boolean }
-    */
-    get isAdultFood() {
-        return this.get({ isAdultFood: null });
+        super.set({ name: value }, String);
     }
     /**
      * @param { Boolean } value
     */
     set isAdultFood(value) {
-        this.set({ isAdultFood: value });
+        super.set({ isAdultFood: value }, Boolean);
     }
 }
 export class Food extends Container {
@@ -40,24 +27,24 @@ export class Food extends Container {
      * @returns { String }
     */
     get name() {
-        return super.get({ name: null });
+        return super.get({ name: null }, String);
     }
     /**
      * @param { String } value
     */
     set name(value) {
-        super.set({ name: value });
+        super.set({ name: value }, String);
     }
     /**
      * @returns { Boolean }
     */
     get isAdultFood() {
-        return super.get({ isAdultFood: null });
+        return super.get({ isAdultFood: null }, Boolean);
     }
     /**
      * @param { Boolean } value
     */
     set isAdultFood(value) {
-        super.set({ isAdultFood: value });
+        super.set({ isAdultFood: value }, Boolean);
     }
 }

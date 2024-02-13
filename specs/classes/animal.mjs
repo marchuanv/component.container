@@ -7,76 +7,40 @@ import {
 } from '../index.mjs';
 export class AnimalCtorArgs extends CtorArgs {
     /**
-     * @returns { String }
-    */
-    get name() {
-        return this.get({ name: null });
-    }
-    /**
      * @param { String } value
     */
     set name(value) {
-        this.set({ name: value });
-    }
-    /**
-     * @returns { Number }
-    */
-    get age() {
-        return this.get({ age: null });
+        super.set({ name: value }, String);
     }
     /**
      * @param { Number } value
     */
     set age(value) {
-        this.set({ age: value });
-    }
-    /**
-     * @returns { Number }
-    */
-    get weight() {
-        return this.get({ weight: null });
+        super.set({ age: value }, Number);
     }
     /**
      * @param { Number } value
     */
     set weight(value) {
-        this.set({ weight: value });
-    }
-    /**
-     * @returns { Food }
-    */
-    get food() {
-        return this.get({ food: null });
+        super.set({ weight: value }, Number);
     }
     /**
      * @param { Food } value
     */
     set food(value) {
-        this.set({ food: value });
-    }
-    /**
-     * @returns { String }
-    */
-    get type() {
-        return this.get({ type: null });
+        super.set({ food: value }, Food);
     }
     /**
      * @param { String } value
     */
     set type(value) {
-        this.set({ type: value });
-    }
-    /**
-     * @returns { Array<String> }
-    */
-    get vaccinationYears() {
-        return this.get({ vaccinationYears: null });
+        super.set({ type: value }, String);
     }
     /**
      * @returns { Array<String> }
     */
     set vaccinationYears(value) {
-        this.set({ vaccinationYears: value });
+        super.set({ vaccinationYears: value }, Array);
     }
 }
 export class Animal extends Container {
@@ -90,19 +54,19 @@ export class Animal extends Container {
      * @returns { String }
     */
     get type() {
-        return super.get({ type: null });
+        return super.get({ type: null }, String);
     }
     /**
      * @param { String } value
     */
     set type(value) {
-        super.set({ type: value });
+        super.set({ type: value }, String);
     }
     /**
      * @returns { Array<String> }
     */
     get vaccinationYears() {
-        return super.get({ vaccinationYears: null });
+        return super.get({ vaccinationYears: null }, Number);
     }
     /**
      * @template T
