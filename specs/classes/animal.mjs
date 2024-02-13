@@ -18,7 +18,6 @@ export class AnimalCtorArgs extends CtorArgs {
     set name(value) {
         this.set({ name: value });
     }
-
     /**
      * @returns { Number }
     */
