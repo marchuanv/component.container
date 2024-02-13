@@ -30,7 +30,6 @@ export class AnimalCtorArgs extends CtorArgs {
     set age(value) {
         this.set({ age: value });
     }
-
     /**
      * @returns { Number }
     */
@@ -43,7 +42,6 @@ export class AnimalCtorArgs extends CtorArgs {
     set weight(value) {
         this.set({ weight: value });
     }
-
     /**
      * @returns { Food }
     */
@@ -56,7 +54,6 @@ export class AnimalCtorArgs extends CtorArgs {
     set food(value) {
         this.set({ food: value });
     }
-
     /**
      * @returns { String }
     */
@@ -69,7 +66,6 @@ export class AnimalCtorArgs extends CtorArgs {
     set type(value) {
         this.set({ type: value });
     }
-
     /**
      * @returns { Array<String> }
     */
