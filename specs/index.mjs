@@ -1,7 +1,10 @@
 import { Specs, TypeRegistry } from "../registry.mjs";
-import { Animal, AnimalCtorArgs } from "./classes/animal.mjs";
-import { Dog, DogCtorArgs } from "./classes/dog.mjs";
-import { Food, FoodCtorArgs } from "./classes/food.mjs";
+import { AnimalCtorArgs } from "./classes/animal-ctor-args.mjs";
+import { Animal } from "./classes/animal.mjs";
+import { DogCtorArgs } from "./classes/dog-ctor-args.mjs";
+import { Dog } from "./classes/dog.mjs";
+import { FoodCtorArgs } from "./classes/food-ctor-args.mjs";
+import { Food } from "./classes/food.mjs";
 
 TypeRegistry.register([
     AnimalCtorArgs,

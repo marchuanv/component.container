@@ -1,9 +1,7 @@
 import {
     Animal,
-    AnimalCtorArgs,
     Food
 } from '../index.mjs';
-export class DogCtorArgs extends AnimalCtorArgs { }
 export class Dog extends Animal {
     /**
      * @param { DogCtorArgs } dogArgs
