@@ -30,6 +30,10 @@
     },
     "homepage": "https://github.com/marchuanv/component.container#readme",
     "dependencies": {
-        "utils": "marchuanv/utils"
+        "utils": "marchuanv/utils",
+        "component.reference": "marchuanv/component.reference",
+        "component.uuid": "marchuanv/component.uuid",
+        "component.specs": "marchuanv/component.specs",
+        "component.type": "marchuanv/component.type"
     }
 }
