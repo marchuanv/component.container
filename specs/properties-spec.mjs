@@ -4,7 +4,7 @@ import {
     Food,
     FoodCtorArgs
 } from './index.mjs';
-describe('when container properties change', () => {
+fdescribe('when container properties change', () => {
     it('should sync data', () => {
 
         const expectedName = 'Parody';

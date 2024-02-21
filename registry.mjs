@@ -4,6 +4,7 @@ export { Specs } from 'component.specs';
 export { Type } from 'component.type';
 export { GUID } from 'component.uuid';
 export { Reflection, base64ToString, stringToBase64 } from 'utils';
+export { Config } from './lib/config.mjs';
 export { Container } from './lib/container.mjs';
 export { CtorArgs } from './lib/ctor-args.mjs';
 export { Property } from './lib/property.mjs';

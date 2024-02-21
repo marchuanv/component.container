@@ -2,12 +2,12 @@ import {
     CtorArgs
 } from '../../registry.mjs';
 import {
-    Animal,
+    AnimalConfig,
     Food
 } from '../index.mjs';
 export class AnimalCtorArgs extends CtorArgs {
     constructor() {
-        super(Animal);
+        super(AnimalConfig);
     }
     /**
      * @param { String } value
