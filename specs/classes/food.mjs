@@ -3,12 +3,6 @@ import {
 } from '../../registry.mjs';
 export class Food extends Container {
     /**
-     * @param { FoodCtorArgs } foodArgs
-    */
-    constructor(foodArgs) {
-        super(foodArgs);
-    }
-    /**
      * @returns { String }
     */
     get name() {

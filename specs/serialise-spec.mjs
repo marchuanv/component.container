@@ -18,12 +18,12 @@ describe('when deserialising the Dog class given an instance of dog ctor args', 
         const dogArgs = new DogCtorArgs();
         dogArgs.age = 12;
         dogArgs.name = 'lassy';
-        dogArgs.food = new Food(foodArgs);
+        dogArgs.food = new Food();
         dogArgs.type = 'dog';
         dogArgs.weight = 24;
         dogArgs.vaccinationYears = ['2010', '2011', '2012'];
 
-        const dog = new Dog(dogArgs);
+        const dog = new Dog();
         try {
             serialisedDogStr = await dog.serialise();
             dogInstance = await Container.deserialise(serialisedDogStr);

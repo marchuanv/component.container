@@ -4,12 +4,6 @@ import {
 } from '../index.mjs';
 export class Dog extends Animal {
     /**
-     * @param { DogCtorArgs } dogArgs
-    */
-    constructor(dogArgs) {
-        super(dogArgs);
-    }
-    /**
      * @returns { String }
     */
     get name() {

@@ -4,7 +4,7 @@ import {
     Food,
     FoodCtorArgs
 } from './index.mjs';
-fdescribe('when container properties change', () => {
+describe('when container properties change', () => {
     it('should sync data', () => {
 
         const expectedName = 'Parody';
@@ -17,12 +17,12 @@ fdescribe('when container properties change', () => {
         const dogArgs = new DogCtorArgs();
         dogArgs.age = expectedAge;
         dogArgs.name = expectedName;
-        dogArgs.food = new Food(foodArgs);
+        dogArgs.food = new Food();
         dogArgs.type = 'dog';
         dogArgs.weight = 24;
         dogArgs.vaccinationYears = ['2010', '2011', '2012'];
 
-        const dog = new Dog(dogArgs);
+        const dog = new Dog();
         expect(dog.name).toBe(expectedName);
         expect(dog.age).toBe(expectedAge);
 

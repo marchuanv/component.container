@@ -3,12 +3,6 @@ import {
 } from '../../registry.mjs';
 export class Animal extends Container {
     /**
-     * @param { AnimalCtorArgs } animalArgs
-    */
-    constructor(animalArgs) {
-        super(animalArgs);
-    }
-    /**
      * @returns { String }
     */
     get type() {
