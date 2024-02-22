@@ -8,5 +8,6 @@ export { Config } from './lib/config.mjs';
 export { Container } from './lib/container.mjs';
 export { CtorArgs } from './lib/ctor-args.mjs';
 export { Property } from './lib/property.mjs';
+export { Register } from './lib/register.mjs';
 export { Properties, Reference };
 
