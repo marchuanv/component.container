@@ -1,24 +1,24 @@
 import {
-    Container
+    Container, Property
 } from '../../registry.mjs';
 export class Animal extends Container {
     /**
      * @returns { String }
     */
     get type() {
-        return super.get({ type: null }, String);
+        return Property.get({ type: null }, String, Animal);
     }
     /**
      * @param { String } value
     */
     set type(value) {
-        super.set({ type: value }, String);
+        Property.set({ type: value }, String, Animal);
     }
     /**
      * @returns { Array<String> }
     */
     get vaccinationYears() {
-        return super.get({ vaccinationYears: null }, Number);
+        return Property.set({ vaccinationYears: null }, Array, Animal);
     }
     /**
      * @template T

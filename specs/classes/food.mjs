@@ -1,29 +1,29 @@
 import {
-    Container
+    Container, Property
 } from '../../registry.mjs';
 export class Food extends Container {
     /**
      * @returns { String }
     */
     get name() {
-        return super.get({ name: null }, String);
+        return Property.get({ name: null }, String, Food);
     }
     /**
      * @param { String } value
     */
     set name(value) {
-        super.set({ name: value }, String);
+        Property.set({ name: value }, String, Food);
     }
     /**
      * @returns { Boolean }
     */
     get isAdultFood() {
-        return super.get({ isAdultFood: null }, Boolean);
+        return Property.get({ isAdultFood: null }, Boolean, Food);
     }
     /**
      * @param { Boolean } value
     */
     set isAdultFood(value) {
-        super.set({ isAdultFood: value }, Boolean);
+        Property.set({ isAdultFood: value }, Boolean, Food);
     }
 }
