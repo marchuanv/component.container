@@ -32,8 +32,8 @@
     "dependencies": {
         "utils": "marchuanv/utils",
         "component.reference": "marchuanv/component.reference",
-        "component.uuid": "marchuanv/component.uuid",
         "component.specs": "marchuanv/component.specs",
-        "component.type": "marchuanv/component.type"
+        "component.type": "marchuanv/component.type",
+        "component.property": "marchuanv/component.property"
     }
 }
