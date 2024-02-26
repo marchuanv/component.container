@@ -1,27 +1,21 @@
 import {
-    CtorArgs
+    CtorArgs, Property
 } from '../../registry.mjs';
-import { FoodConfig } from '../index.mjs';
+import { Food } from '../index.mjs';
 export class FoodCtorArgs extends CtorArgs {
     constructor() {
-        super(FoodConfig);
+        super(Food);
     }
     /**
      * @param { String } value
     */
     set name(value) {
-        super.set({ name: value }, String);
+        Property.set({ name: value }, String, FoodCtorArgs);
     }
     /**
      * @param { Boolean } value
     */
     set isAdultFood(value) {
-        super.set({ isAdultFood: value }, Boolean);
-    }
-    /**
-     * @returns { Boolean }
-    */
-    get isAdultFood() {
-        return super.get({ isAdultFood: null }, Boolean);
+        Property.set({ isAdultFood: value }, Boolean, FoodCtorArgs);
     }
 }

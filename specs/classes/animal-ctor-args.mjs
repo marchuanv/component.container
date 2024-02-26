@@ -1,54 +1,48 @@
 import {
-    CtorArgs
+    CtorArgs, Property
 } from '../../registry.mjs';
 import {
-    AnimalConfig,
+    Animal,
     Food
 } from '../index.mjs';
 export class AnimalCtorArgs extends CtorArgs {
     constructor() {
-        super(AnimalConfig);
+        super(Animal);
     }
     /**
      * @param { String } value
     */
     set name(value) {
-        super.set({ name: value }, String);
+        Property.set({ name: value }, String, AnimalCtorArgs);
     }
     /**
      * @param { Number } value
     */
     set age(value) {
-        super.set({ age: value }, Number);
+        Property.set({ age: value }, Number, AnimalCtorArgs);
     }
     /**
      * @param { Number } value
     */
     set weight(value) {
-        super.set({ weight: value }, Number);
+        Property.set({ weight: value }, Number, AnimalCtorArgs);
     }
     /**
      * @param { Food } value
     */
     set food(value) {
-        super.set({ food: value }, Food);
+        Property.set({ food: value }, Food, AnimalCtorArgs);
     }
     /**
      * @param { String } value
     */
     set type(value) {
-        super.set({ type: value }, String);
+        Property.set({ type: value }, String, AnimalCtorArgs);
     }
     /**
      * @param { Array<String> } value
     */
     set vaccinationYears(value) {
-        super.set({ vaccinationYears: value }, Array);
-    }
-    /**
-     * @returns { Array<String> }
-    */
-    get vaccinationYears() {
-        super.set({ vaccinationYears: null }, Array);
+        Property.set({ vaccinationYears: value }, Array, AnimalCtorArgs);
     }
 }
