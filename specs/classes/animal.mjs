@@ -6,19 +6,19 @@ export class Animal extends Container {
      * @returns { String }
     */
     get type() {
-        return Property.get({ type: null }, String, Animal);
+        return Property.get({ type: null }, String);
     }
     /**
      * @param { String } value
     */
     set type(value) {
-        Property.set({ type: value }, String, Animal);
+        Property.set({ type: value }, String);
     }
     /**
      * @returns { Array<String> }
     */
     get vaccinationYears() {
-        return Property.set({ vaccinationYears: null }, Array, Animal);
+        return Property.set({ vaccinationYears: null }, Array);
     }
     /**
      * @template T

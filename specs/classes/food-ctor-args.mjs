@@ -10,12 +10,12 @@ export class FoodCtorArgs extends CtorArgs {
      * @param { String } value
     */
     set name(value) {
-        Property.set({ name: value }, String, FoodCtorArgs);
+        Property.set({ name: value }, String);
     }
     /**
      * @param { Boolean } value
     */
     set isAdultFood(value) {
-        Property.set({ isAdultFood: value }, Boolean, FoodCtorArgs);
+        Property.set({ isAdultFood: value }, Boolean);
     }
 }
