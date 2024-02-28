@@ -1,5 +1,5 @@
 import {
-    CtorArgs, Property
+    CtorArgs
 } from '../../registry.mjs';
 import { Food } from '../index.mjs';
 export class FoodCtorArgs extends CtorArgs {
@@ -10,12 +10,12 @@ export class FoodCtorArgs extends CtorArgs {
      * @param { String } value
     */
     set name(value) {
-        Property.set({ name: value }, String);
+        super.set({ name: value }, String);
     }
     /**
      * @param { Boolean } value
     */
     set isAdultFood(value) {
-        Property.set({ isAdultFood: value }, Boolean);
+        super.set({ isAdultFood: value }, Boolean);
     }
 }

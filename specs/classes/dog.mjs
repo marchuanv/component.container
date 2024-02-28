@@ -1,4 +1,3 @@
-import { Property } from 'component.property';
 import {
     Animal,
     Food
@@ -8,49 +7,49 @@ export class Dog extends Animal {
      * @returns { String }
     */
     get name() {
-        return Property.get({ name: null }, String);
+        return super.get({ name: null }, String);
     }
     /**
      * @param { String } value
     */
     set name(value) {
-        Property.set({ name: value }, String);
+        super.set({ name: value }, String);
     }
     /**
      * @returns { Number }
     */
     get age() {
-        return Property.get({ age: null }, Number);
+        return super.get({ age: null }, Number);
     }
     /**
      * @param { Number } value
     */
     set age(value) {
-        Property.set({ age: value }, Number);
+        super.set({ age: value }, Number);
     }
     /**
      * @returns { Number }
     */
     get weight() {
-        return Property.get({ weight: null }, Number);
+        return super.get({ weight: null }, Number);
     }
     /**
      * @param { Number } value
     */
     set weight(value) {
-        Property.set({ weight: value }, Number);
+        super.set({ weight: value }, Number);
     }
     /**
      * @returns { Food }
     */
     get food() {
-        return Property.get({ food: null }, Food);
+        return super.get({ food: null }, Food);
     }
     /**
      * @param { Food } value
     */
     set food(value) {
-        Property.set({ food: value }, Food);
+        super.set({ food: value }, Food);
     }
     /**
      * @param { Number } meters
