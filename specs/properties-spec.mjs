@@ -1,4 +1,3 @@
-import { Property } from 'component.property';
 import {
     Dog,
     DogCtorArgs,
@@ -28,11 +27,11 @@ fdescribe('when container properties change', () => {
         expect(dog.age).toBe(expectedAge);
 
         let fireCount = 0;
-        Property.onSet({ name: null }, String, Dog, (value) => {
+        dog.onSet({ name: null }, String, Dog, (value) => {
             fireCount = fireCount + 1;
             return expectedName;
         });
-        Property.onSet({ age: null }, Number, Dog, (value) => {
+        dog.onSet({ age: null }, Number, Dog, (value) => {
             fireCount = fireCount + 1;
             return expectedAge;
         });
