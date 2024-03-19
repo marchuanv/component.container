@@ -1,14 +1,8 @@
+import { Container } from '../../registry.mjs';
 import {
-    CtorArgs
-} from '../../registry.mjs';
-import {
-    Animal,
     Food
 } from '../index.mjs';
-export class AnimalCtorArgs extends CtorArgs {
-    constructor() {
-        super(Animal);
-    }
+export class AnimalCtorArgs extends Container {
     /**
      * @param { String } value
     */
