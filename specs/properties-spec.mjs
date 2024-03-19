@@ -1,16 +1,9 @@
-import { Type } from '../registry.mjs';
 import {
-    Animal,
     Dog,
     DogCtorArgs,
     Food,
     FoodCtorArgs
 } from './index.mjs';
-
-new Type(Animal);
-new Type(Food);
-new Type(Dog);
-
 fdescribe('when container properties change', () => {
     it('should sync data', () => {
 
