@@ -4,7 +4,4 @@ export { Specs } from 'component.specs';
 export { ReferenceId, TypeReference, TypeReferenceContext, TypeRegisterEntry } from 'component.type';
 export { Store, Type, TypeRegister } from 'component.uuid';
 export { GUID, Reflection, base64ToString, stringToBase64 } from 'utils';
-export { ContainerConfig } from './lib/container-config.mjs';
 export { Container } from './lib/container.mjs';
-export { ContainerStack } from './lib/container-stack.mjs';
-

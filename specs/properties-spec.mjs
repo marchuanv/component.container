@@ -1,3 +1,4 @@
+import { Container } from '../registry.mjs';
 import {
     Dog,
     DogCtorArgs,
@@ -10,19 +11,19 @@ fdescribe('when container properties change', () => {
         const expectedName = 'Parody';
         const expectedAge = 5;
 
-        const foodArgs = new FoodCtorArgs();
+        const foodArgs = Container.create(FoodCtorArgs, FoodCtorArgs.prototype);
         foodArgs.isAdultFood = true;
         foodArgs.name = 'epol';
 
-        const dogArgs = new DogCtorArgs();
+        const dogArgs = Container.create(DogCtorArgs, DogCtorArgs.prototype);
         dogArgs.age = expectedAge;
         dogArgs.name = expectedName;
-        dogArgs.food = new Food();
+        dogArgs.food = Container.create(Food, FoodCtorArgs.prototype);
         dogArgs.type = 'dog';
         dogArgs.weight = 24;
         dogArgs.vaccinationYears = ['2010', '2011', '2012'];
 
-        const dog = new Dog();
+        const dog = Container.create(Dog, DogCtorArgs.prototype);
         expect(dog.name).toBe(expectedName);
         expect(dog.age).toBe(expectedAge);
 
