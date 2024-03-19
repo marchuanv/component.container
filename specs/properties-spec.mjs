@@ -8,6 +8,8 @@ import {
 fdescribe('when container properties change', () => {
     it('should sync data', () => {
 
+        Container.register(Food);
+
         const expectedName = 'Parody';
         const expectedAge = 5;
 
