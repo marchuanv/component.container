@@ -18,7 +18,7 @@ export class Animal extends Container {
      * @returns { Array<String> }
     */
     get vaccinationYears() {
-        return super.set({ vaccinationYears: null }, Array);
+        return super.get({ vaccinationYears: null }, Array);
     }
     /**
      * @template T
