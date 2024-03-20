@@ -20,12 +20,12 @@ fdescribe('when container properties change', () => {
         const dogArgs = Container.create(DogCtorArgs, DogCtorArgs.prototype);
         dogArgs.age = expectedAge;
         dogArgs.name = expectedName;
-        dogArgs.food = Container.create(Food, FoodCtorArgs.prototype);
+        dogArgs.food = Container.create(Food, FoodCtorArgs.prototype, foodArgs);
         dogArgs.type = 'dog';
         dogArgs.weight = 24;
         dogArgs.vaccinationYears = ['2010', '2011', '2012'];
 
-        const dog = Container.create(Dog, DogCtorArgs.prototype);
+        const dog = Container.create(Dog, DogCtorArgs.prototype, dogArgs);
         expect(dog.name).toBe(expectedName);
         expect(dog.age).toBe(expectedAge);
 

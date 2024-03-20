@@ -25,7 +25,7 @@ export class DogCtorArgs extends Container {
      * @returns { Number }
     */
     get age() {
-        return super.get({ age: null }, String);
+        return super.get({ age: null }, Number);
     }
     /**
      * @param { Number } value
@@ -37,7 +37,7 @@ export class DogCtorArgs extends Container {
      * @returns { Number }
     */
     get weight() {
-        return super.get({ weight: null }, String);
+        return super.get({ weight: null }, Number);
     }
     /**
      * @param { Food } value

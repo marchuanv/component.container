@@ -10,7 +10,7 @@ export class FoodCtorArgs extends Container {
      * @returns { String }
     */
     get name() {
-        return super.get({ name: value }, String);
+        return super.get({ name: null }, String);
     }
     /**
      * @param { Boolean } value
@@ -22,6 +22,6 @@ export class FoodCtorArgs extends Container {
      * @returns { Boolean }
     */
     get isAdultFood() {
-        return super.get({ isAdultFood: value }, Boolean);
+        return super.get({ isAdultFood: null }, Boolean);
     }
 }
