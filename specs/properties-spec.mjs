@@ -30,11 +30,11 @@ fdescribe('when container properties change', () => {
         expect(dog.age).toBe(expectedAge);
 
         let fireCount = 0;
-        dog.onSet({ name: null }, String, Dog, (value) => {
+        dog.onSet({ name: null }, String, (value) => {
             fireCount = fireCount + 1;
             return expectedName;
         });
-        dog.onSet({ age: null }, Number, Dog, (value) => {
+        dog.onSet({ age: null }, Number, (value) => {
             fireCount = fireCount + 1;
             return expectedAge;
         });
